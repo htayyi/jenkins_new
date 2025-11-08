@@ -1,8 +1,7 @@
-#jenkinsfile
 pipeline {
 	agent any
 	environment {
-		DOCKER_IMAGE = 	'hello_world-python:1.0'
+		DOCKER_IMAGE='hello_world-python:1.0'
 		    }			
 	stage { 
 	  stage('Checkout') {
