@@ -3,7 +3,7 @@ pipeline {
 	environment {
 		DOCKER_IMAGE='hello_world-python:1.0'
 		    }			
-	stage { 
+	stages { 
 	  stage('Checkout') {
 		steps {
 			git branch: 'main', url :
