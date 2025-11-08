@@ -10,7 +10,7 @@ pipeline {
 'https://github.com/htayyi/jenkins_new.git'
 		      }
 	 }
-		stage('Docker Build) {
+		stage('Docker Build') {
 		  steps { 
 			script {
 				if (fileExists('Dockerfile')) {
