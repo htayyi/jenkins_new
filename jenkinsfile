@@ -1,12 +1,15 @@
 #jenkinsfile
 pipeline {
 	agent any
+	environment {
+		DOCKER_IMAGE = 	'hello_world-python:1.0'
+		    }			
 	stage { 
 	  stage('Checkout') {
 		steps {
 			git branch: 'main', url :
 'https://github.com/htayyi/jenkins_new.git'
-		}
+		      }
 	 }
 		stage('Docker Build) {
 		  steps { 
